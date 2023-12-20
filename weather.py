@@ -35,7 +35,6 @@ def weathershow(city):
         print("-"*10)
         print("Sunrise : "+str(datetime.datetime.utcfromtimestamp(x["sys"]["sunrise"]+ 5 * 3600 + 30 * 60)))
         print("Sunset : "+str(datetime.datetime.utcfromtimestamp(x["sys"]["sunset"]+ 5 * 3600 + 30 * 60)))
-        # datetime.datetime.utcfromtimestamp(x["sys"]["sunrise"])
         a+=1
         print(f"[UPDATED] : {a}")
         if not AOD:
